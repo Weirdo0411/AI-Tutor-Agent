@@ -2,16 +2,10 @@
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Award](https://img.shields.io/badge/Award-Grand_Prize_🏆-FFD700)
-![Platform](https://img.shields.io/badge/Platform-Dify-blue)
-![Model](https://img.shields.io/badge/Model-Qwen_Plus_%7C_Qwen_VL-000000)
-
 **[2025 阿里云-立信大学生竞赛 AI 创新赛（上海赛区）特等奖作品]**
 
-一个基于 **Dify** 工作流编排与 **RAG** 技术构建的三方协同教育智能体。
-采用独创的**“输入-决策-执行”三层架构**，解决传统教育 AI "缺乏情感关怀"、"交互模式单一"与"直接给出答案"的痛点，
-为**学生、教师、家长**提供零学习成本的专业教育服务。
+一个基于 **阿里云百炼 (Aliyun Bailian)** 工作流编排与 **RAG** 技术构建的三方协同教育智能体。
+采用独创的**“输入-决策-执行”三层架构**，解决传统教育 AI "缺乏情感关怀"、"交互模式单一"与"直接给出答案"的痛点。
 
 [English](./README_EN.md) | [中文](./README.md)
 
@@ -24,7 +18,7 @@
 当前 AI 教育工具普遍存在“直接给答案导致学生思维惰性”、“教师备课工具碎片化”、“家长辅导缺乏专业话术”等问题。
 本项目旨在打造一个**全场景、多角色、高情商**的伴学智能体，通过**多模态识别**与**意图精准路由**，实现教育资源的精准匹配。
 
-## 🏗️ 系统架构 (System Architecture)
+## 🏗️ 系统架构
 
 本项目采用创新的 **三层分层架构**，实现了毫秒级路由与 100% 的角色匹配准确率：
 
@@ -36,7 +30,7 @@
 
 ---
 
-## ✨ 核心功能详解 (Core Features)
+## ✨ 核心功能详解
 
 ### 👨‍🎓 1. 学生端：自主学习与成长伙伴
 
@@ -132,5 +126,5 @@
 | **教师-教案** | [`teacher_lesson_plan.md`](prompts/teacher_lesson_plan_designer.md) | 结构化 Markdown 输出、教学法融入 |
 
 ## 🏆 荣誉
-*   **特等奖 (Grand Prize)** - 2025 阿里云-立信大学生竞赛 AI 创新赛（上海赛区）
+*   **特等奖** - 2025 阿里云-立信大学生竞赛 AI 创新赛（上海赛区）
 
