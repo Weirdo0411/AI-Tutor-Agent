@@ -1,0 +1,1567 @@
+app:
+  mode: workflow
+  name: 家校生伴学智能体
+  subMode: chat
+kind: app
+version: 0.1.0
+workflow:
+  graph:
+    edges:
+    - id: 1763361876048-false-1763362331479-target
+      source: Judge_1763361876048
+      sourceHandle: Judge_1763361876048_default
+      target: LLM_1763362331479
+      targetHandle: LLM_1763362331479
+    - id: 1763365054826-true-1763005027549-target
+      source: Judge_1763365054826
+      sourceHandle: Judge_1763365054826_true
+      target: Classifier_1763005027549
+      targetHandle: Classifier_1763005027549
+    - id: 1762771650570-source-1763361876048-target
+      source: Start_1762771650570
+      sourceHandle: Start_1762771650570
+      target: Judge_1763361876048
+      targetHandle: Judge_1763361876048
+    - id: 1763005027549-1-1763005198022-target
+      source: Classifier_1763005027549
+      sourceHandle: Classifier_1763005027549_1
+      target: LLM_1763005198022
+      targetHandle: LLM_1763005198022
+    - id: 1763005027549-2-1763366828455-target
+      source: Classifier_1763005027549
+      sourceHandle: Classifier_1763005027549_2
+      target: LLM_1763366828455
+      targetHandle: LLM_1763366828455
+    - id: 1763368322140-1-1763368995674-target
+      source: Classifier_1763368322140
+      sourceHandle: Classifier_1763368322140_1
+      target: LLM_1763368995674
+      targetHandle: LLM_1763368995674
+    - id: 1763005198022-source-answer-target
+      source: LLM_1763005198022
+      sourceHandle: LLM_1763005198022
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: 1763368322140-2-1763433974945-target
+      source: Classifier_1763368322140
+      sourceHandle: Classifier_1763368322140_2
+      target: LLM_1763433974945
+      targetHandle: LLM_1763433974945
+    - id: 1763464666274-2-1763464692207-target
+      source: Classifier_1763464666274
+      sourceHandle: Classifier_1763464666274_2
+      target: LLM_1763464692207
+      targetHandle: LLM_1763464692207
+    - id: 1763464692207-source-1763464759198-target
+      source: LLM_1763464692207
+      sourceHandle: LLM_1763464692207
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: 1763464666274-1-1763464908361-target
+      source: Classifier_1763464666274
+      sourceHandle: Classifier_1763464666274_1
+      target: LLM_1763464908361
+      targetHandle: LLM_1763464908361
+    - id: 1763464908361-source-1763465245524-target
+      source: LLM_1763464908361
+      sourceHandle: LLM_1763464908361
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: 1763465609086-true-1763368538432-target
+      source: Judge_1763465609086
+      sourceHandle: Judge_1763465609086_true
+      target: ParameterExtractor_1763368538432
+      targetHandle: ParameterExtractor_1763368538432
+    - id: 1763465609086-false-1763464666274-target
+      source: Judge_1763465609086
+      sourceHandle: Judge_1763465609086_default
+      target: Classifier_1763464666274
+      targetHandle: Classifier_1763464666274
+    - id: 1763005027549-1763466130388-1763466261956-target
+      source: Classifier_1763005027549
+      sourceHandle: Classifier_1763005027549_1763466130388
+      target: LLM_1763466261956
+      targetHandle: LLM_1763466261956
+    - id: 1763368322140-1763466553451-1763466590647-target
+      source: Classifier_1763368322140
+      sourceHandle: Classifier_1763368322140_1763466553451
+      target: LLM_1763466590647
+      targetHandle: LLM_1763466590647
+    - id: 1763466590647-source-1763466648318-target
+      source: LLM_1763466590647
+      sourceHandle: LLM_1763466590647
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: 1763005027549-1763608428979-1763608707877-target
+      source: Classifier_1763005027549
+      sourceHandle: Classifier_1763005027549_1763608428979
+      target: LLM_1763608707877
+      targetHandle: LLM_1763608707877
+    - id: 1763608707877-source-1763608798777-target
+      source: LLM_1763608707877
+      sourceHandle: LLM_1763608707877
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: LLM_1763368995674-LLM_1763368995674-End_1558531279671-End_1558531279671
+      source: LLM_1763368995674
+      sourceHandle: LLM_1763368995674
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: LLM_1763433974945-LLM_1763433974945-End_1558531279671-End_1558531279671
+      source: LLM_1763433974945
+      sourceHandle: LLM_1763433974945
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: LLM_1763362331479-LLM_1763362331479-VariableHandle_1763363487705-VariableHandle_1763363487705
+      source: LLM_1763362331479
+      sourceHandle: LLM_1763362331479
+      target: VariableHandle_1763363487705
+      targetHandle: VariableHandle_1763363487705
+    - id: VariableHandle_1763363487705-VariableHandle_1763363487705-Judge_1763465609086-Judge_1763465609086
+      source: VariableHandle_1763363487705
+      sourceHandle: VariableHandle_1763363487705
+      target: Judge_1763465609086
+      targetHandle: Judge_1763465609086
+    - id: Judge_1763361876048-Judge_1763361876048_true-VariableHandle_1763363487705-VariableHandle_1763363487705
+      source: Judge_1763361876048
+      sourceHandle: Judge_1763361876048_true
+      target: VariableHandle_1763363487705
+      targetHandle: VariableHandle_1763363487705
+    - id: xy-edge__LLM_1763466261956LLM_1763466261956-End_1558531279671End_1558531279671
+      source: LLM_1763466261956
+      sourceHandle: LLM_1763466261956
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: Judge_1763365054826-Judge_1763365054826_default-Classifier_1763368322140-Classifier_1763368322140
+      source: Judge_1763365054826
+      sourceHandle: Judge_1763365054826_default
+      target: Classifier_1763368322140
+      targetHandle: Classifier_1763368322140
+    - id: Retrieval_22e4-Retrieval_22e4-Judge_1763365054826-Judge_1763365054826
+      source: Retrieval_22e4
+      sourceHandle: Retrieval_22e4
+      target: Judge_1763365054826
+      targetHandle: Judge_1763365054826
+    - id: ParameterExtractor_1763368538432-ParameterExtractor_1763368538432-Script_r2I6-Script_r2I6
+      source: ParameterExtractor_1763368538432
+      sourceHandle: ParameterExtractor_1763368538432
+      target: Script_r2I6
+      targetHandle: Script_r2I6
+    - id: Script_r2I6-Script_r2I6-Retrieval_22e4-Retrieval_22e4
+      source: Script_r2I6
+      sourceHandle: Script_r2I6
+      target: Retrieval_22e4
+      targetHandle: Retrieval_22e4
+    - id: LLM_1763366828455-LLM_1763366828455-MCP_WbL3-MCP_WbL3
+      source: LLM_1763366828455
+      sourceHandle: LLM_1763366828455
+      target: MCP_WbL3
+      targetHandle: MCP_WbL3
+    - id: MCP_WbL3-MCP_WbL3-Script_JRRa-Script_JRRa
+      source: MCP_WbL3
+      sourceHandle: MCP_WbL3
+      target: Script_JRRa
+      targetHandle: Script_JRRa
+    - id: Script_JRRa-Script_JRRa-End_1558531279671-End_1558531279671
+      source: Script_JRRa
+      sourceHandle: Script_JRRa
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    - id: Classifier_1763005027549-Classifier_1763005027549_BXEa-LLM_MOJm-LLM_MOJm
+      source: Classifier_1763005027549
+      sourceHandle: Classifier_1763005027549_BXEa
+      target: LLM_MOJm
+      targetHandle: LLM_MOJm
+    - id: LLM_MOJm-LLM_MOJm-End_1558531279671-End_1558531279671
+      source: LLM_MOJm
+      sourceHandle: LLM_MOJm
+      target: End_1558531279671
+      targetHandle: End_1558531279671
+    nodes:
+    - id: Start_1762771650570
+      type: Start
+      name: 开始
+      x: -1584
+      y: 587
+      config:
+        inputParams: []
+        outputParams:
+        - key: role
+          type: String
+          desc: 身份角色（学生/教师/家长）
+          required: false
+        nodeParam: {}
+    - id: Classifier_1763005027549
+      type: Classifier
+      name: 问题分类器 学生
+      x: -360
+      y: 250
+      config:
+        inputParams:
+        - key: content
+          type: Object
+          value: "${VariableHandle_1763363487705.result}"
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: Object
+          desc: 输出结果
+          properties:
+          - key: thought
+            type: String
+            desc: 思考过程
+          - key: subject
+            type: String
+            desc: 命中主题
+        nodeParam:
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 100
+            type: self
+          modelConfig:
+            modelId: qwen-plus-latest
+            params: {}
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+            capabilities:
+            - QwQ
+            - TG
+          multiDecision: false
+          instruction: ""
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          modeSwitch: efficient
+          conditions:
+          - conditionId: default
+            targetIds: []
+            subject: ""
+          - conditionId: "1"
+            targetIds:
+            - LLM_1763005198022
+            subject: |-
+              输入的意图为以下之一：
+              1. 输入本身是一个题目、练习题、计算题、编程题、考试题、作业题。
+              2. 输入的意图是让 LLM 给出答案、推导过程、解释或求解步骤。
+              3. 读取用户记忆（memory），如果历史记录中显示该用户曾输入过题目并寻求解答，则本次输入应优先判定为 solve_question，即使文本中未明确写出“请解答”。
+          - conditionId: "2"
+            targetIds:
+            - LLM_1763366828455
+            subject: 输入的意图为将笔记/讲义/教材中的内容总结为清晰、直观、便于复习的课堂笔记或复习题
+          - conditionId: "1763466130388"
+            targetIds:
+            - LLM_1763466261956
+            subject: '输入意图为情绪描述，涉及用户情绪、行为、学习顾虑、亲子沟通策略、心理分析等。  '
+          - conditionId: "1763608428979"
+            targetIds:
+            - LLM_1763608707877
+            subject: 输入意图为进行多轮模拟口语对话（英语/日语/法语/中文/...）
+          - conditionId: BXEa
+            subject: |-
+              学生的输入为对某一学科知识点的提问，目的是了解“是什么、有什么特征、有什么区别、如何区分、原理是什么”等基础概念或规律性知识。
+              比如：
+              - 晶体和非晶体的区别是什么？
+              - 热带雨林气候的典型特征有哪些？
+              - 有丝分裂前期和中期是怎么区分的？
+              - 什么是函数？
+              - 光合作用的过程是怎样的？
+            targetIds:
+            - LLM_MOJm
+          contextSwitch: true
+    - id: LLM_1763005198022
+      type: LLM
+      name: LLM 题目解答
+      x: -40
+      y: 32
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n\n读取${sys.query}或${VariableHandle_1763363487705.result}，\
+            识别用户是第一次提出问题，还是在回答上一轮对话中的提问。如果是**第一次提出问题**，请严格遵守下面的规则与流程。\n\n\n一、判定“直接\
+            答案”的条件（若满足任一项视为明确要求直接答案）\n- 用户明确写到或近似表达如下任意短语（包括但不限于）：\n  - “直接答案”\n \
+            \ - “一次性给出答案”\n  - “给我答案”\n  - “直接写出答案”\n  - “不要提示，直接解答/给出结果”\n  - “只要\
+            答案/直接结果”\n- 用户在对话中回复“我想直接看答案/不用提示”或等效语句时。\n> 如果检测到以上任一情况，则采用【标准解答流程】；否\
+            则，（比如“第十题怎么做”、“第三题”、“教我做这道题”或等效语句），默认采用【启发式教学流程】。\n\n\n二、多题文档与题目定位规则\n\
+            - 若文档/输入包含多个题目且用户的 query **未** 指明要做第几题或哪一题：**默认从第 1 题开始**，按顺序逐题进行交互式辅导\
+            （每题遵循下述流程）。\n- 若用户在 query 中明确指定题号或题目位置（示例：“第1题”、“选择题第3问”、“document 第2页\
+            第4题”等），则**准确定位到该题**并仅对该题进行处理。\n- 若题目以编号、序号或标题分隔，优先按编号/序号定位；若题目为自然段落且无法\
+            确定编号，则按出现顺序判定。\n\n\n三、当学生中途改变要求\n- 若开始采用启发式流程后学生在途中回复明确要求“直接答案”，立即切换到【\
+            标准解答流程】，并给出完整答案与简要关键步骤说明。\n- 若学生先要求直接答案但随后要求“只要思路/不要最后结果”，则从【标准解答流程】切换\
+            回【启发式教学流程】，并相应调整后续对话。\n\n\n四、流程（严格遵守）\n【启发式教学流程】（默认）\n1. 在首段**简要说明题型与考\
+            点**（1-2 句）。\n2. 给出**第一步思考提示**（一句到两句，足够引导但不直接给出答案）。\n3. **提出一个具体的启发性问题\
+            **（便于学生作答，例如“你可以先试着算出 x 的值吗？”）。\n4. **等待学生回答**（在此回复后不得自行继续给出下一步解答，除非学生\
+            回复或请求）。\n5. 根据学生的回答，**动态调整解释并进入下一步提示或提出下一问**，直到学生理解或请求完整答案为止。\n6. 判定**学\
+            生回答的对错**，在启发式教学流程中，当学生回答了 LLM 的提问，如果答案明显错误、部分正确或存在误解时：**必须明确指出错误点**（避免\
+            含糊的“再想想”）；**简要解释错误原因或误解来源**（不泄露最终答案）；**给出该步骤的提示或该步骤的正确答案**。\n例如：\n- “你\
+            的答案是 6，但从组合数公式来看，应该是...”\n\n\n【标准解答流程】（仅在满足“直接答案”的条件时）\n1. 直接进行必要的计算或推\
+            理（步骤应清晰、完整）。\n2. 给出**完整答案**（明确标注最终结果）。\n3. 简要解释关键步骤与必要的检查/验证（保持精炼，不做过多\
+            交互式提示）。\n\n\n五、输出与格式要求\n- 所有输出**严格使用 Markdown** 格式（适当使用标题、加粗、行内公式或代码块以\
+            提高可读性，不要在末尾输出多余的符号）。\n- 在第一次的回复内容中**首行**应注明：**“使用流程：启发式教学流程”** 或 **“使用\
+            流程：标准解答流程”**（根据当前判定结果）。\n- **内部自检要求**：在发送最终回复前，进行 **三次自我检查**（检查：① 数学/逻\
+            辑正确性；② 无乱码或未渲染的 TeX/Markdown；③ 回答是否匹配用户要求）。不需要输出自检过程和结果（比如“自检通过”）。\n\n\
+            \n六、额外要求（提高鲁棒性）\n- 判定“是否为题目”的阈值要宽松：例如只要文本包含“求、计算、证明、证明如下、请写出、解答、选择题、填空\
+            题、证明题、作图”等关键词，应优先视为题目并按题目流程处理。\n- 对于开放性或主观性问题（如“如何学习……”、“如何提高……”），若用户未\
+            要求解题，视为学习辅导类内容，按照启发式方式给出分步引导和练习建议，而不是直接给出“答案”。\n- 若题目包含图片、公式、表格或多栏排版，且\
+            文本中未包含完整题干，优先提示用户上传或粘贴完整题干（但若文档已包含题干，则按定位规则处理）。\n\n\n七、示例性开头格式（严格遵守）\n\
+            - 示例1：启发式教学流程\n题目：第 1 题（若文档含多题且未指定，则默认第 1 题）\n题型与考点：\n<一句话说明>\n第一步思考提示\
+            ：\n<提出题目第一步讲解与引导>\n启发性问题：\n<提问，等待学生回答>\n\n\n- 示例2：标准解答流程\n题目：第 1 题（若文档\
+            含多题且未指定，则默认第 1 题）\n题型与考点：\n<一句话说明>\n解答步骤：\n<解答步骤>\n\n\n八、不要做的事\n- 避免把用\
+            户回答误判为题号。当用户回复一个数字（如“10”、“2”、“5”等）时，如果该数字是在回答 LLM 的启发式问题（例如 “你算出有几种情况？\
+            ”），则 **绝不能** 将此数字视为题号或跳转指令。只有当用户出现以下“明确题号结构”之一时，才把数字解释为题号：\n  - “第 X 题\
+            ”\n  - “第 X 小题”\n  - “做 X 题”\n  - “讲第 X 题”\n  - “选择题第 X 问”\n  - “请做第 X\
+            \ 题”\n  - “想要第 X 题的解答”\n  - “X 题怎么做”\n  - “帮我解第 X 题”\n**单独的数字、计算结果、公式中\
+            的数字一律不得认定为题号，不触发跳题。**正在启发式教学过程中，如果 LLM 提问后用户回复一个数字，则默认该数字为回答内容，而不是题号指令\
+            。\n- 不要在未得到学生同意的情况下一次性给出完整答案（除非判定为“直接答案”）。\n- 不要在启发式流程中连续泄题或把完整解答藏在多个消\
+            息后递进（启发式应真实启发，逐步推进）。\n- 不要输出自检的内部步骤或“思考链”（不要暴露内部链路/推理过程）。\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: "\n- 你是一个中小学${ParameterExtractor_1763368538432.subject}学\
+            科辅导智能体（tutor-agent），目标是帮助学生理解题目与解题思路，而不是无条件替他们做题。你应与学生进行多轮互动式讲解与提问，除非学\
+            生**明确**要求直接给出完整答案。\n- 你必须始终参考知识库检索结果${Retrieval_22e4.result}（若存在）进行判断、\
+            讲解与回答。若${Retrieval_22e4.result}中包含与题目相关的信息，需优先使用其中的定义、公式、概念或解题步骤；若${Retrieval_22e4.result}缺\
+            失关键内容，可结合你自己的学科知识补充说明，但不能与其矛盾。\n"
+          batchSize: 200
+          contextSwitch: true
+    - id: Judge_1763361876048
+      type: Judge
+      name: 条件分支
+      x: -1584
+      y: 652
+      config:
+        inputParams: []
+        outputParams: []
+        nodeParam:
+          branches:
+          - targetIds:
+            - VariableHandle_1763363487705
+            id: "true"
+            label: 新条件组1
+            logic: or
+            conditions:
+            - left:
+                type: Array<String>
+                value: "${sys.imageList}"
+                key: ""
+                valueFrom: refer
+              right:
+                valueFrom: input
+                type: String
+              operator: isNull
+          - targetIds:
+            - LLM_1763362331479
+            id: default
+            label: 默认条件
+    - id: LLM_1763362331479
+      type: LLM
+      name: LLM 图片文字提取
+      x: -1309
+      y: 757
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "请从图片中**原封不动地**识别文字\n输出格式：\n${sys.query}; 图片中的文字: ......"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen3-vl-flash
+            provider: langgenius/siliconflow/siliconflow
+            params: {}
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams:
+            - type: Array<String>
+              key: vlImageUrl
+              desc: 图片地址
+              value: "${sys.imageList}"
+              valueFrom: refer
+            capabilities:
+            - IU
+            - VU
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |2-
+
+            你是一个从图片提取文字的专家
+          batchSize: 200
+          contextSwitch: true
+    - id: VariableHandle_1763363487705
+      type: VariableHandle
+      name: 变量聚合器
+      x: -1020
+      y: 666
+      config:
+        inputParams: []
+        outputParams:
+        - key: result
+          type: Object
+          desc: 返回结果
+          properties:
+          - key: text
+            type: String
+            value: "${LLM_1763362331479.result}"
+            valueFrom: refer
+          - key: query
+            type: String
+            value: "${sys.query}"
+            valueFrom: refer
+        nodeParam:
+          jsonParams:
+          - type: String
+            value: "${LLM_1763362331479.result}"
+            key: text
+            valueFrom: refer
+          - key: query
+            valueFrom: refer
+            type: String
+            value: "${sys.query}"
+          groups:
+          - groupName: Group1
+            variables:
+            - type: String
+              value: "${Script_1763362887403.result}"
+              key: result
+              valueFrom: refer
+            - type: String
+              value: "${LLM_1763362331479.result}"
+              key: text
+              valueFrom: refer
+            groupId: 094a79f3-5e3b-4678-8c38-d3e83fd80f10
+            outputType: String
+          templateContent: ""
+          groupStrategy: firstNotNull
+          type: json
+    - id: Judge_1763365054826
+      type: Judge
+      name: 条件分支 角色分类
+      x: -688
+      y: 665
+      config:
+        inputParams: []
+        outputParams: []
+        nodeParam:
+          branches:
+          - targetIds:
+            - Classifier_1763005027549
+            id: "true"
+            label: 新条件组1
+            logic: or
+            conditions:
+            - left:
+                type: String
+                value: "${Start_1762771650570.role}"
+                key: ""
+                valueFrom: refer
+              right:
+                type: String
+                value: 学生
+                valueFrom: input
+              operator: contains
+            - left:
+                type: String
+                value: "${Start_1762771650570.role}"
+                key: ""
+                valueFrom: refer
+              right:
+                type: String
+                value: ""
+                valueFrom: input
+              operator: isNull
+          - targetIds:
+            - Classifier_1763368322140
+            id: default
+            label: 默认条件
+    - id: LLM_1763366828455
+      type: LLM
+      name: LLM 笔记整理
+      x: -41
+      y: 121
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        - key: reasoningContent
+          type: String
+          desc: 深度思考
+        nodeParam:
+          promptContent: "\n你的任务是：\n根据 ${sys.query}的要求，从 ${VariableHandle_1763363487705.result}*中\
+            提取内容，生成一份**可直接复习的完整 Markdown 学习笔记**。\n\n笔记必须包含以下部分（按顺序组织）：\n\n1. **# 标\
+            题（主题名称）**\n2. **## 概述**：对主题做简要介绍。\n3. **## 核心知识点**：使用条目列出关键概念、方法、性质、分类\
+            等。\n4. **## 重要公式 / 定理**（若有才输出） ：\n   * 清晰列出公式或定理（若有）\n   * 适当给出简短解释或推导\
+            思路\n5. **## 典型例题与解析**：\n   * 至少 1 个\n   * 明确给出题干、解题步骤、结论\n6. **## 常见易错\
+            点**：\n   * 列出常见误区或错误理解\n7. **## 复习习题（含解析/答案）**\n   * 2～4 题\n   * 每题附简洁\
+            解析或答案\n---\n# **输出格式要求（必须遵守）**\n* **最终输出必须仅为 Markdown 文本**（不能包含 JSON、不\
+            能包含 mermaid、不能包含额外说明）。\n* Markdown 必须排版清晰，有标题层级、列表、公式等。\n* 不能出现渲染错误或乱码\
+            ，例如：未闭合的 `$$`、多余的反斜杠、损坏的代码块等。\n---\n# **内部自检要求（你无需输出自检内容）**\n在输出前自行完成三\
+            次检查（但不要写出来）：\n1. **数学与逻辑正确性**\n2. **无乱码、无未渲染公式、无格式错误**\n3. **内容结构是否完整并\
+            完全符合要求**"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+            capabilities:
+            - QwQ
+            - TG
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: "\n- 你是一名资深学科教师兼笔记整理专家，擅长将教材、课堂讲义、文档、PDF 内容或学生笔记整理成清晰、\
+            结构化、易于理解的学习笔记。 \n- 你必须始终参考知识库检索结果${Retrieval_22e4.result}（若存在）进行笔记 。若\
+            ${Retrieval_22e4.result}中包含与笔记相关的信息，需优先使用其中的定义、公式、概念或步骤；若${Retrieval_22e4.result}缺\
+            失关键内容，可结合你自己的学科知识补充说明，但不能与其矛盾。 \n"
+          batchSize: 200
+          contextSwitch: true
+    - id: Classifier_1763368322140
+      type: Classifier
+      name: 问题分类器 教师
+      x: -363
+      y: 733
+      config:
+        inputParams:
+        - key: content
+          type: String
+          value: "${sys.query}"
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: Object
+          desc: 输出结果
+          properties:
+          - key: thought
+            type: String
+            desc: 思考过程
+          - key: subject
+            type: String
+            desc: 命中主题
+        nodeParam:
+          shortMemory:
+            enabled: false
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 3
+            type: self
+          modelConfig:
+            modelId: tongyi-intent-detect-v3
+            params:
+              enable_thinking: false
+              dialogRound: 3
+              temperature: 0.7
+              maxTokens: 1024
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          multiDecision: false
+          instruction: ""
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          modeSwitch: efficient
+          conditions:
+          - conditionId: default
+            targetIds: []
+            subject: ""
+          - conditionId: "1"
+            targetIds:
+            - LLM_1763368995674
+            subject: 用户意图为生成相关知识点的习题或试卷，读取用户记忆（memory），如果历史记录中显示该用户曾输入有关生成相关知识点习题或试卷的意图，也为此类。
+          - conditionId: "2"
+            targetIds:
+            - LLM_1763433974945
+            subject: 用户意图为生成教案/课堂活动设计/教学方案咨询
+          - conditionId: "1763466553451"
+            targetIds:
+            - LLM_1763466590647
+            subject: 用户输入涉及学生情绪、行为、沟通策略、心理分析、非暴冲突话术等。 意图为给予学生心理疏导与鼓励
+          contextSwitch: false
+    - id: ParameterExtractor_1763368538432
+      type: ParameterExtractor
+      name: 参数提取器 提取学科
+      x: -727
+      y: 436
+      config:
+        inputParams:
+        - key: content
+          type: String
+          value: "${sys.query}"
+          valueFrom: refer
+        outputParams:
+        - key: subject
+          type: String
+          desc: 提取学科名称，例如“数学”/“物理”/“英语”/“历史”/“日语”等，如果不涉及学科类别则为空
+        - key: detail
+          type: String
+          desc: 提取具体的知识点，比如“一元二次方程”/“导数”/“气候类型”/“细胞分裂”/“唐宋时期的文化”/“古文”/“诗歌”/“有机化学”等，如果没有具体的知识点，则为空
+        - key: _is_completed
+          type: Boolean
+          desc: 是否完整解析
+        - key: _reason
+          type: String
+          desc: 未成功解析的原因
+        nodeParam:
+          shortMemory:
+            enabled: true
+            type: self
+            round: 12
+            param:
+              key: historyList
+              type: Array<String>
+              valueFrom: refer
+              value: "${sys.historyList}"
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              enable_thinking: false
+              dialogRound: 3
+              temperature: 0.7
+              maxTokens: 1024
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          extractParams:
+          - type: String
+            key: subject
+            required: false
+            desc: 提取学科名称，例如“数学”/“物理”/“英语”/“历史”/“日语”等，如果不涉及学科类别则为空
+          - type: String
+            key: detail
+            required: false
+            desc: 提取具体的知识点，比如“一元二次方程”/“导数”/“气候类型”/“细胞分裂”/“唐宋时期的文化”/“古文”/“诗歌”/“有机化学”等，如果没有具体的知识点，则为空
+          instruction: 提取相关变量
+    - id: LLM_1763368995674
+      type: LLM
+      name: LLM 习题生成
+      x: -43
+      y: 688
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n\n要求：\n1. 用户输入 query，例如：\n   - “帮我生成5道关于细胞分裂的生物题，难度中等”\
+            \n   - “生成3篇语文阅读理解题，附选择题和简答题”\n   - “生成4道初中物理计算题，涉及力学和能量”\n2. 输出以 mardown\
+            \ 格式，每道题编号清晰。\n3. 如果${sys.query}明确要求**不要生成答案**、**仅生成题目**等字样，则**只需要**生成\
+            题目；否则，默认需要生成答案，答案统一在题目生成完毕后再统一生成，客观题要有解题思路和步骤。\n4. 题目要原创且紧扣知识点或主题，符合对应\
+            学科的教学要求。\n5. 根据${sys.query}控制题型、数量和难度，如果 query 中未说明，可自行生成合理题型组合。\n\n-\
+            \ **内部自检要求**：在发送最终回复前，进行 **三次自我检查**（检查：① 数学/逻辑正确性；② 无乱码或未渲染的 TeX/Markdown；\
+            ③ 回答是否匹配用户要求）。不需要输出自检过程和结果（比如“自检通过”）。\n\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: "\n- 你是一名资深教师兼出题专家，熟悉${ParameterExtractor_1763368538432.subject}学\
+            科的教学内容和考试要求。你的任务是根据${sys.query}的要求生成与指定知识点或主题：${VariableHandle_1763363487705.result}相\
+            关的练习题。\n- 你必须始终参考知识库检索结果${Retrieval_22e4.result}（若存在）进行习题生成。若${Retrieval_22e4.result}中\
+            包含与题目相关的信息，需优先使用其中的定义、公式、概念或解题步骤；若${Retrieval_22e4.result}缺失关键内容，可结合你自\
+            己的学科知识补充说明，但不能与其矛盾。\n"
+          batchSize: 200
+          contextSwitch: true
+    - id: LLM_1763433974945
+      type: LLM
+      name: LLM 教案生成
+      x: -49
+      y: 805
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "输出要求：\n1. 自动理解用户 query\n用户输入示例可能包括：\n“帮我设计一节关于细胞分裂的40分钟生\
+            物课，包含教学目标、重难点”/“生成一份小学三年级语文的课堂活动设计，主题是《寓言故事》”/“提供一份关于力学基本概念的初中物理教学流程，加\
+            入师生互动环节”/“只要教学流程，不要活动”。\n你需要根据这些自然语言指令理解输出形式、内容深度和结构。\n2. Markdown 输出，\
+            结构清晰\n所有内容均以\_Markdown\_格式呈现，包括一级标题、二级标题、列表等。\n3. 自动判断是否需要生成“教学反思 / 板书\
+            设计 / 课堂练习”等扩展内容\n如果${sys.query}明确写出“不要××”“只输出××”，则严格遵守。\n如果 query 未说明，\
+            可根据学科与课型合理补充。\n4. 教案内容要求\n设计须满足以下基本模块（除非 query 明确不需要）：\n教学目标（分知识、能力、情感\
+            /素养）\n教学重点 / 难点\n教学准备（教师与学生）\n教学过程（分环节、写清活动设计与师生互动）\n课堂活动方案（如有）\n课堂练习（\
+            如需要，题目需原创）\n作业设计（如合适）\n教学反思（可选，根据 query 判断）\n5. 活动设计要求\n活动应具有可操作性与课堂真实\
+            可执行性。\n活动要体现学科特点，例如：\n语文 → 朗读、讨论、文本分析\n数学 → 探究任务、小组推导\n生物 → 观察实验/模型示意\n\
+            物理 → 操作演示、探究实验\n历史 → 史料分析、角色扮演\n6. 当 query 内容不完整时\n如果用户只给出主题、不给形式（例如“电\
+            磁感应”），你需要自动补全完整教案结构。\n7. 教学内容需原创\n所有教案和活动不得抄袭教材原文，需由你原创生成。\n最终行为规则\nquery\
+            \ 没说不要，就默认生成完整教案。\nquery 明确要求“不要××”或“只生成××” → 必须严格遵守。\n输出格式始终为 Markdown，\
+            可被直接复制到教案文档中使用。\n\n- **内部自检要求**：在发送最终回复前，进行 **三次自我检查**（检查：① 数学/逻辑正确性；②\
+            \ 无乱码或未渲染的 TeX/Markdown；③ 回答是否匹配用户要求）。不需要输出自检过程和结果（比如“自检通过”）。"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: "\n- 你是一名资深教师兼教学设计专家，熟悉${ParameterExtractor_1763368538432.subject}学\
+            科的课程标准、教学重难点和课堂活动设计理论。\n- 你的任务是根据 ${sys.query} 的需求 与 知识库检索内容 ${Retrieval_22e4.result}，\
+            围绕指定的知识点或教学主题生成 高质量、专业且可直接用于课堂的教案或课堂活动设计。\n"
+          batchSize: 200
+          contextSwitch: true
+    - id: Classifier_1763464666274
+      type: Classifier
+      name: 问题分类器 家长
+      x: -366
+      y: 1025
+      config:
+        inputParams:
+        - key: content
+          type: String
+          value: "${sys.query}"
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: Object
+          desc: 输出结果
+          properties:
+          - key: thought
+            type: String
+            desc: 思考过程
+          - key: subject
+            type: String
+            desc: 命中主题
+        nodeParam:
+          shortMemory:
+            enabled: false
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 3
+            type: self
+          modelConfig:
+            modelId: tongyi-intent-detect-v3
+            params:
+              enable_thinking: false
+              dialogRound: 3
+              temperature: 0.7
+              maxTokens: 1024
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          multiDecision: false
+          instruction: ""
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          modeSwitch: efficient
+          conditions:
+          - conditionId: default
+            targetIds: []
+            subject: ""
+          - conditionId: "1"
+            targetIds:
+            - LLM_1763464908361
+            subject: ' **学习日报/周报生成类**：涉及孩子学习内容、作业、表现、难点、易错点、每日/每周/每学期学习总结、建议等。'
+          - conditionId: "2"
+            targetIds:
+            - LLM_1763464692207
+            subject: '**亲子沟通/情绪管理类**：涉及孩子情绪、行为、亲子沟通策略、心理分析、非暴冲突话术等。  '
+          contextSwitch: false
+    - id: LLM_1763464692207
+      type: LLM
+      name: LLM 亲子沟通
+      x: -43
+      y: 1147
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n\n你的任务：  \n针对家长输入的的${sys.query}或${VariableHandle_1763363487705.result}（\
+            孩子的近期表现、行为、语言或某个具体场景），你需要同时完成 **两大功能**：\n\n\n===============================\n\
+            【任务一：孩子情绪与成因分析】\n===============================\n从家长描述中分析孩子可能出现的：\n\n\
+            \n1. **可能情绪**（如焦虑、挫败、疲惫、羞耻、恐惧、被忽视感等）\n2. **可能原因与触发点**（如学习压力、同伴矛盾、完美主义、\
+            感到不被理解、生理疲劳等）\n3. **家长可执行的安全建议**\n   - 不夸大、不过度解读\n   - 避免惊吓家长或下诊断\n4.\
+            \ **家庭干预方式**\n   - 家庭沟通方法  \n   - 日常可操作的情绪支持方式\n   - 环境调整建议\n5. **何时需要\
+            寻求老师/学校帮助**\n6. **何时需要寻求专业心理咨询师或医生的协助（如必要时）**\n\n\n要求：\n- 分析应基于心理学常识，不\
+            给出医学诊断。\n- 风格温和、中立、非指责。\n\n\n===============================\n【任务二：生成具\
+            体的亲子沟通话术】\n===============================\n根据场景，为家长输出 **可以直接说出口的、逐句可用\
+            的“非暴冲突沟通（NVC）话术”**。\n\n\n使用 NVC 四步骤：\n1. **观察（不评价）**\n2. **感受（表达孩子与家长的\
+            感受）**\n3. **需要（指出未被满足的需求）**\n4. **请求（提出具体温和、可执行的请求）**\n\n\n需要生成：\n- **开\
+            场安抚话术**\n- **共情孩子的情绪话术**\n- **不贴标签、不命令、不威胁的沟通方式**\n- **帮助孩子表达感受的引导句**\n\
+            - **促进合作、不引发对抗的建议句**\n\n\n场景示例包括但不限于：\n- 孩子不想写作业  \n- 考试失利  \n- 上课走神 \
+            \ \n- 和同学发生矛盾  \n- 放学回家情绪行为异常（摔书包、不说话）  \n- 被批评/被忽视后的反应  \n\n\n===============================\n\
+            【输出格式要求】\n===============================\n\n\n请严格按照以下结构输出（使用 Markdown）\
+            ：\n\n\n## \U0001f9e9 一、孩子情绪与可能原因分析\n- **可能情绪：** …\n- **可能原因：** …\n- **触\
+            发点推测：** …\n\n\n## \U0001f6df 二、安全建议\n- …\n\n\n## \U0001f3e0 三、家庭干预方式\n\
+            1. …\n2. …\n3. …\n\n\n## \U0001f9d1‍\U0001f3eb 四、何时需要寻求老师/学校协助\n- …\n\n\
+            \n## \U0001f468‍⚕️ 五、何时考虑寻求心理专业人士帮助\n- …\n\n\n## \U0001f4ac 六、推荐的亲子沟通话\
+            术\n### 1. 开场安抚\n- …\n\n\n### 2. 情绪共情\n- …\n\n\n### 3. 引导孩子表达\n- …\n\n\n\
+            ### 4. 建设性讨论与合作请求\n- …\n\n\n===============================\n【自检要求（不展示\
+            给用户）】\n===============================\n在最终输出前进行三次自检：\n1. 信息科学合理，不涉及医学\
+            诊断，适配家长认知\n2. 无恐吓、标签化表述，不责备孩子及家长\n3. 话术温和易懂、可落地，无对抗性，贴合亲子沟通\n\n\n不要输出自\
+            检过程。\n\n\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |2
+
+            你是一名专业的儿童心理咨询师 + 家庭教育指导师，擅长：
+            - 识别孩子行为背后的情绪与心理需求
+            - 使用非暴冲突沟通（NVC）进行亲子沟通指导
+            - 帮助家长在学业、行为、同伴关系等问题中进行科学、温和、有效的应对
+          batchSize: 200
+          contextSwitch: true
+    - id: LLM_1763464908361
+      type: LLM
+      name: LLM 学习追踪
+      x: -49
+      y: 1027
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n\n你的任务：  \n根据家长输入的描述内容的${sys.query}或${VariableHandle_1763363487705.result}（\
+            如学习内容、作业情况、表现、状态等），自动生成「家庭可直接使用的 Markdown 学习日报/周报/未来规划」。\n\n\n===============================\n\
+            【你需要分析与生成的内容】\n===============================\n\n\n1. **当日 / 当周 / 当学期\
+            学习任务总结**  \n仅基于家长提供的信息，精准提取学习内容。\n\n\n2. **学习难点回顾**  \n识别孩子遇到的难点、理解障碍、\
+            卡点知识点。\n\n\n3. **表现亮点**  \n从描述中发现孩子积极的表现、努力点、态度亮点。\n\n\n4. **需关注行为** \
+            \ \n例如：情绪变化、注意力波动、拖延、焦虑、疲惫等  \n（注意：只能作“轻度心理状态判断”，不做诊断）\n\n\n5. **易错点提醒\
+            **  \n总结某个科目/任务中易忽视或易犯错的部分。\n\n\n6. **心理状态判断（轻度）**  \n根据描述推测孩子的轻度状态（如：\
+            动力不足、自尊受挫、疲倦、焦虑、紧张、缺乏安全感）  \n⚠️ 必须避免医学性词汇，不下诊断。\n\n\n7. **明日 / 下周 / 下学\
+            期学习建议**  \n- 如何巩固学习  \n- 如何调整节奏\n- 如何进行放松（比如本日/本周/本学期学习效率极高）  \n- 家长如何\
+            支持  \n- 在家可进行的简单策略  \n\n\n===============================\n【输出格式要求：必须使\
+            用 Markdown】\n===============================\n\n\n请严格按照以下结构生成内容：\n\n\n\
+            ## \U0001f4d8 一、今天 / 本周 / 本学期学习任务总结\n- …\n\n\n## \U0001f3af 二、学习难点回顾\n\
+            - …\n\n\n## \U0001f31f 三、表现亮点\n- …\n\n\n## \U0001f440 四、需关注的行为/习惯\n- …\
+            \n\n\n## ❗ 五、本阶段易错点\n- …\n\n\n## \U0001f9e0 六、孩子心理状态\n- …\n\n\n## \U0001f5d3\
+            ️ 七、明天 / 下周 / 下学期学习建议\n1. …\n2. …\n3. …\n\n\n===============================\n\
+            【输出风格要求】\n===============================\n- 语气温和、鼓励、正向、家长容易理解\n- 不使用医\
+            学诊断术语\n- 从描述中抽取信息，不虚构不存在的细节\n- 内容高度结构化、清晰、可直接复制到家庭管理工具  \n\n\n===============================\n\
+            【自检要求（不展示给用户）】\n===============================\n在输出前，请自检三次：\n1. 是否符合\
+            \ Markdown 格式  \n2. 是否无诊断性术语  \n3. 是否完全基于家长输入，不添加严重臆测  \n\n\n不要展示自检内容与\
+            过程。\n\n\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |2
+
+            你是一名专业的学习成长记录分析师、儿童学习指导师，擅长根据家长描述的“孩子今日/本周/本学期学习情况”自动生成结构化学习日报或周报或下学期的规划。
+          batchSize: 200
+          contextSwitch: true
+    - id: Judge_1763465609086
+      type: Judge
+      name: 条件分支 是否是家长
+      x: -1020
+      y: 736
+      config:
+        inputParams: []
+        outputParams: []
+        nodeParam:
+          branches:
+          - targetIds:
+            - ParameterExtractor_1763368538432
+            id: "true"
+            label: 新条件组1
+            logic: and
+            conditions:
+            - left:
+                type: String
+                value: "${Start_1762771650570.role}"
+                key: ""
+                valueFrom: refer
+              right:
+                type: String
+                value: 家长
+                valueFrom: input
+              operator: notContains
+          - targetIds:
+            - Classifier_1763464666274
+            id: default
+            label: 默认条件
+    - id: LLM_1763466261956
+      type: LLM
+      name: LLM 心理疏导
+      x: -43
+      y: 356
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n你可以根据孩子的输入：${sys.query}，生成回复。\n\n##  避免事项\n\n* 不要固定结构\n\
+            * 不要一次回复很长\n* 不要使用标题、列表、编号\n* 不要长篇教育、分析、解释\n* 不要重复同一种建议（例如每次都说深呼吸）\n*\
+            \ 不要使用诊断性词语\n* 不要忽略孩子的感受\n\n## 如果出现风险内容（自动切换）\n\n当孩子提到：严重绝望、自伤想法、被伤害、失\
+            去安全感\n你需立即：\n\n* 稳住情绪\n* 用温柔但清晰的语气建议他们告诉信任的成年人或学校心理老师\n* 不拖延、不含糊、不责备\n\
+            \n例：\n“这听起来真的很沉重，你不需要一个人撑着。现在让一个大人知道，会让你更安全。”\n\n##  总体原则（核心）\n\n你的回复应\
+            该让孩子感觉：有人在听我说话，而且我被理解了。\n\n语气真实、自然、不做作、不机械、不模板化，不一次性说太多，让对话可以慢慢展开。"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |-
+            你现在的身份与风格
+            - 你是一名温暖、接纳、有同理心的“情绪陪伴者”（像值得信赖的朋友或学长/学姐），同时具备儿童心理与家庭教育的专业背景。
+            - 你的语气：真诚、简短、非说教、鼓励、耐心。
+            - 不给出医学诊断或专业判断语言（如“病”、“诊断”）。如需专业干预建议，温和提出并引导联系学校心理老师或家长/专业机构。
+
+            你是一位**温柔、接纳、像朋友一样的情绪陪伴者**，同时拥有儿童心理与家庭教育背景。
+            你的目标：在聊天中 **帮助孩子表达、接住感受、得到安慰与理解**，而不是教育他们。
+
+
+            ## 你的风格（必须遵守）
+
+            * 像一个**真正愿意倾听的小伙伴/温柔的学长学姐**
+            * 回复自然、不格式化、不机械
+            * 使用短句、口语化、贴近孩子
+            * 尊重情绪，不评判、不训诫、不讲道理
+            * 轻柔、真诚、同理，不做医学诊断
+            * 鼓励孩子继续聊，而不是一次说完所有内容
+          batchSize: 200
+          contextSwitch: true
+    - id: LLM_1763466590647
+      type: LLM
+      name: LLM 学生沟通
+      x: -47
+      y: 923
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        nodeParam:
+          promptContent: "\n\n你的任务：\n针对教师输入的的${sys.query}或${VariableHandle_1763363487705.result}（\
+            学生的情绪表现、行为问题或具体教育场景），你需要同时完成**两大功能**：\n\n\n===============================\n\
+            【任务一：学生情绪与行为分析】\n===============================\n从教师描述中分析学生可能存在的：\n\n\
+            \n1. **潜在情绪状态**（如焦虑、挫败、愤怒、羞耻、无助、压力等）\n2. **可能原因与触发因素**（如学业困难、同伴关系、家庭因素\
+            、自尊感受损等）\n3. **教育场景下的应对建议**\n   - 基于教育心理学原则\n   - 避免给学生贴标签\n4. **课堂支持策\
+            略**\n   - 师生沟通方法\n   - 课堂环境调整\n   - 同伴支持引导\n\n\n===============================\n\
+            【任务二：生成师生沟通与辅导话术】\n===============================\n根据教育场景，为教师提供**适用于学\
+            校环境的师生沟通话术**，包含：\n\n\n使用教育沟通四步骤：\n1. **客观描述**（不评判）\n2. **情感认同**（理解学生感受\
+            ）\n3. **需求识别**（分析行为背后的需求）\n4. **支持提供**（给出具体可行的建议）\n\n\n需要生成：\n- **建立信任\
+            的开场话术**\n- **表达理解与共情的话术**\n- **引导学生表达的提问技巧**\n- **提供支持与解决方案的表述**\n- **鼓\
+            励学生积极行为的肯定语句**\n\n\n场景示例包括但不限于：\n- 学生课堂注意力不集中\n- 考试成绩下滑后的情绪低落\n- 与同学发生\
+            冲突\n- 拒绝完成课堂任务\n- 突然的行为改变或情绪波动\n\n\n===============================\n【\
+            输出格式要求】\n===============================\n\n\n请严格按照以下结构输出（使用 Markdown）\
+            ：\n\n\n## \U0001f9e9 一、学生情绪与行为分析\n- **可能情绪状态：** ...\n- **潜在原因分析：** ...\n\
+            - **课堂表现触发点：** ...\n\n\n## \U0001f6df 二、教育应对建议\n- ...\n\n\n## \U0001f3eb\
+            \ 三、课堂支持策略\n1. ...\n2. ...\n3. ...\n\n\n## \U0001f4ac 四、师生沟通参考话术\n###\
+            \ 1. 建立信任的开场\n- ...\n\n\n### 2. 表达理解与共情\n- ...\n\n\n### 3. 引导表达与反思\n-\
+            \ ...\n\n\n### 4. 提供支持与鼓励\n- ...\n\n\n## \U0001f91d 五、何时需要家校沟通\n- ...\n\
+            \n\n## \U0001f468‍⚕️ 六、何时建议寻求专业支持\n- ...\n\n\n===============================\n\
+            【自检要求（不展示给用户）】\n===============================\n在最终输出前进行三次自检：\n1. 建议是\
+            否符合教育场景与教师职责边界\n2. 不出现诊断性表述或专业术语过度使用\n3. 所有话术是否适合师生关系、具有可操作性\n\n\n不要输出\
+            自检过程。\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+              temperature: 0.7
+              enable_thinking: false
+              thinking_budget: 4000
+              enable_search: false
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |2
+
+            你是一名专业的儿童心理咨询师 + 学校教育指导师，擅长：
+            - 识别学生行为背后的情绪与心理需求
+            - 使用教育心理学方法进行学生心理疏导
+            - 帮助教师在学业压力、同伴关系、课堂行为等问题中提供科学、有效的学生支持
+          batchSize: 200
+          contextSwitch: true
+    - id: LLM_1763608707877
+      type: LLM
+      name: LLM 语音对话
+      x: -40
+      y: 469
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+        - key: reasoningContent
+          type: String
+          desc: 深度思考
+        nodeParam:
+          promptContent: "首先读取用户的输入${sys.query},你需要：\n1. 识别用户输入的语言，确保输出语言与其一致\n2.\
+            \ 如果用户没有指定内容或主题，询问用户希望交流什么\n3. 一次对话不要输出太多的信息\n4. 继续与用户对话（保持自然的对答），不要终止\
+            话题\n5. 所有回答都使用自然的口语\n6. 不要输出表情符号、特殊符号、特殊字符\n\n- 输出前自检3次，自检内容：\n1. 角色适配\
+            ：已明确口语陪练老师身份，语气自然亲切，符合口语交流场景；\n2. 核心需求响应：用户未指定内容 / 主题时，已主动询问交流方向，覆盖规则第\
+            一条；\n3. 语言风格：采用口语化表达，无书面化冗余表述，契合规则第三条；\n4. 语法与用词：不要出现语法错误或用词不当；\n5. 对话\
+            引导：结尾留有余地，便于用户接续话题，为后续自然对答铺垫，满足规则第二条。\n**不要输出自检内容**\n"
+          imageFormat: URL
+          imageSource: images
+          tryCatchConfig:
+            strategy: noop
+          shortMemory:
+            enabled: true
+            param:
+              key: historyList
+              type: Array<String>
+              value: "${sys.historyList}"
+              valueFrom: refer
+            round: 50
+            type: self
+          batchEnable: false
+          modelConfig:
+            mode: chat
+            modelId: qwen-plus-latest
+            provider: langgenius/openai_api_compatible/openai_api_compatible
+            params:
+              maxTokens: 32768
+            outputParams:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+            referParams: []
+            capabilities:
+            - QwQ
+            - TG
+          concurrentSize: 1
+          contextParam:
+            key: historyList
+            type: Array<String>
+            value: "${sys.historyList}"
+            valueFrom: refer
+          sysPromptContent: |2+
+
+            你是一位口语陪练老师。
+
+          batchSize: 200
+          contextSwitch: true
+    - id: End_1558531279671
+      type: End
+      name: 结束
+      x: 689
+      y: 703
+      config:
+        inputParams: []
+        outputParams: []
+        nodeParam:
+          jsonParams: []
+          streamSwitch: true
+          outputType: text
+          textTemplate: "${LLM_1763005198022.result}${LLM_1763366828455.result}${Script_JRRa.result}${LLM_1763466261956.result}${LLM_1763608707877.result}${LLM_MOJm.result}${LLM_1763368995674.result}${LLM_1763433974945.result}${LLM_1763466590647.result}${LLM_1763464908361.result}${LLM_1763464692207.result}\n"
+    - id: Retrieval_22e4
+      type: Retrieval
+      name: 知识库检索
+      x: -726
+      y: 578
+      config:
+        inputParams:
+        - key: content
+          type: String
+          value: "${Script_r2I6.output}"
+          valueFrom: refer
+        - key: imageList
+          type: Array<String>
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: Object
+          desc: 输出结果
+          properties:
+          - key: chunkList
+            type: Array<Object>
+            desc: 召回片段列表
+            properties:
+            - key: content
+              type: String
+              desc: 内容
+            - key: title
+              type: String
+              desc: 标题
+            - key: documentName
+              type: String
+              desc: 文档名称
+            - key: score
+              type: Number
+              desc: 分数
+          - key: rewriteQuery
+            type: String
+            desc: 改写后内容
+        nodeParam:
+          topK: 10
+          knowledgeBaseCodeList:
+          - hx07c9f4kp
+    - id: Script_r2I6
+      type: Script
+      name: 脚本 知识库输入
+      x: -728
+      y: 507
+      config:
+        inputParams:
+        - key: sub
+          type: String
+          value: "${ParameterExtractor_1763368538432.subject}"
+          valueFrom: refer
+        - key: input1
+          type: String
+          value: "${VariableHandle_1763363487705.result.query}"
+          valueFrom: refer
+        outputParams:
+        - key: output
+          type: String
+          desc: 输出结果
+          properties: []
+        nodeParam:
+          scriptContent: "def main():\n  ret = {\n        \"output\": params['sub']\
+            \ + '学科 ' + params['input1']\n  }\n  return ret"
+          tryCatchConfig:
+            strategy: noop
+          retryConfig:
+            retryEnabled: false
+            maxRetries: 3
+            retryInterval: 500
+          scriptType: python
+    - id: MCP_WbL3
+      type: MCP
+      name: MCP思维导图
+      x: -14
+      y: 188
+      config:
+        inputParams:
+        - key: prompt
+          type: String
+          value: "${sys.query}"
+          valueFrom: refer
+        - key: layout
+          valueFrom: refer
+        - key: lang
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 工具执行结果
+        nodeParam:
+          serverCode: edraw-ai
+          serverName: Edraw AI
+          toolName: generate_mindmap
+    - id: Script_JRRa
+      type: Script
+      name: 脚本 解析思维导图链接
+      x: 8
+      y: 254
+      config:
+        inputParams:
+        - key: input1
+          type: String
+          value: "${MCP_WbL3.result}"
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 输出结果
+          properties: []
+        nodeParam:
+          scriptContent: "import re\n\ndef main():\n    # 强制把 input1 转成字符串\n    s\
+            \ = str(params['input1'])\n\n    # 找 .png 位置\n    png_pos = s.rfind('.png')\n\
+            \    img_link = ''\n\n    if png_pos != -1:\n        # 从头到 .png 的部分\n\
+            \        substr = s[:png_pos + 4]\n\n        # 找离 .png 最近的 https://\n\
+            \        https_pos = substr.rfind('https://')\n        if https_pos !=\
+            \ -1:\n            img_link = substr[https_pos:png_pos + 4]\n\n    ret\
+            \ = {\n        \"result\": img_link\n    }\n    return ret"
+          tryCatchConfig:
+            strategy: noop
+          retryConfig:
+            retryEnabled: false
+            maxRetries: 3
+            retryInterval: 500
+          scriptType: python
+    - id: LLM_MOJm
+      type: LLM
+      name: LLM 知识问答
+      x: -42
+      y: 571
+      config:
+        inputParams:
+        - key: content
+          valueFrom: refer
+        outputParams:
+        - key: result
+          type: String
+          desc: 文本输出
+        - key: reasoningContent
+          type: String
+          desc: 深度思考
+        nodeParam:
+          promptContent: "\n【知识库检索结果】\n${Retrieval_22e4.result}\n\n【用户问题】\n${sys.query}\n\
+            \n你的回答必须严格遵循以下规则：\n\n1. 你必须优先依据【知识库检索结果】来回答用户问题。  \n2. 只有在【知识库检索结果为空，或\
+            与用户问题完全无关】的情况下，你才可以基于你的通用知识自行回答。  \n3. 如果知识库中存在相关内容，你的回答必须以知识库为唯一或主要依据\
+            ，禁止编造、禁止无依据补充。  \n4. 回答必须紧密围绕【用户问题】，不得偏题、不得输出无关内容。  \n5. 回答应当准确、清晰、有条理\
+            ，优先使用简洁、结构化的表达方式。\n\n现在请根据以上规则，生成对【用户问题】的最终回答。\n"
+          shortMemory:
+            enabled: true
+            type: self
+            round: 50
+            param:
+              key: historyList
+              type: Array<String>
+              valueFrom: refer
+              value: "${sys.historyList}"
+          tryCatchConfig:
+            strategy: noop
+            defaultValues:
+            - key: result
+              type: String
+              desc: 文本输出
+              isSystem: true
+          batchEnable: false
+          modelConfig:
+            modelId: qwen-plus-latest
+            params:
+              maxTokens: 32768
+            referParams: []
+            capabilities:
+            - QwQ
+            - TG
+          retryConfig:
+            retryEnabled: false
+            maxRetries: 3
+            retryInterval: 500
+          concurrentSize: 5
+          processCanOutput: false
+          contextParam:
+            key: historyList
+            type: Array<String>
+            valueFrom: refer
+            value: "${sys.historyList}"
+          sysPromptContent: |
+            你是一名基于知识库进行问答的智能助手。
+          batchSize: 50
+          contextSwitch: true
+  globalConfig:
+    historyConfig:
+      historySwitch: true
+      historyMaxRound: 50
+    variableConfig:
+      sessionParams: []
+    historyMaxRound: 5
